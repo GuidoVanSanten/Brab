@@ -1,0 +1,7 @@
+= link_to "fuck u new shit", new_article_path
+
+%table
+  - @articles.each do |article|
+    %tr
+      %td= link_to article.title, article_path(article)
+      %td= button_to "delete the fakkar", article, method: :delete, confirm: 'Zeker homo?!'
